@@ -1,0 +1,257 @@
+/*@font-face{
+  font-family: "Calibri";
+  src: url("../fonts/Calibri.eot");
+  src: url("../fonts/Calibri.woff") format("woff"),
+  url("../fonts/Calibri.otf") format("OpenType"),
+  url("../fonts/Calibri.svg") format("svg"),
+  url("../fonts/Calibri.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}*/
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	font-family: "Calibri", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 46px;
+	color: #434343;
+    background: #fff;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+    clear: both;
+}
+
+.container {
+	max-width: 1964px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+/*header*/
+header {
+    padding: 7px 0 13px;
+    background: #253341;
+    color: #ffffff;
+    border-bottom: 3px solid #2e2e2e;
+}
+
+.main-header {
+    padding: 3px 0 5px;
+}
+
+h1 {
+	color:  #ffffff;
+	margin: 0;
+}
+
+h1 a {
+	color: #ffffff;
+	text-decoration: none;
+    font-weight: 300;
+    font-size: 66px;
+}
+
+.brand {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.contact-info {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 50px;
+	color:  #ffffff;
+	font-weight: 300;
+    padding-right: 38px;
+    padding-top: 28px;
+}
+
+.contact-info a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.contact-info a:hover,
+.contact-info a:focus,
+.contact-info a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+/*end header*/
+
+/*content*/
+.content1 {
+	max-width: 66%;
+	z-index: 10;
+	color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.application {
+	max-width: 866px;
+	border: 5px solid #72c872;
+	padding: 10px;
+}
+
+.application p {
+	color:  #ffffff;
+	font-size: 67px;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2 {
+	font-size: 100px;
+	font-weight: 700;
+	margin: 0;
+}
+
+h3 {
+	color:  #ffffff;
+	font-size: 75px;
+	font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.content1 span {
+	color:  #ffffff;
+	font-size: 46px;
+	font-weight: 300;
+}
+
+.bg-image1 {
+	position: relative;
+	background: url(../img/pic1.jpeg) no-repeat;
+	background-size: cover;
+    z-index: 2;
+}
+
+.bg-image1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    bottom: 0;
+    width: 2085px;
+    -moz-transform: skew(-58.1deg) translateX(-48.9%);
+    -ms-transform: skew(-58.1deg) translateX(-48.9%);
+    -o-transform: skew(-58.1deg) translateX(-48.9%);
+    -webkit-transform: skew(-58.1deg) translateX(-48.9%);
+    transform: skew(-58.1deg) translateX(-48.9%);
+    background: #2d3e50;
+    z-index: -1;
+}
+
+.btn {
+	background-color: #72c872;
+	color:  #ffffff;
+    font-size: 58px;
+	font-weight: 300;
+	text-align: center;
+	border: none;
+    padding: 5px 0 15px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: #4abd92;
+}
+
+.form-group,
+.input-group {
+	max-width: 95%;
+    margin: 0 auto;
+}
+
+.form-group .btn {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	font-size: 58px;
+}
+
+input[type="submit"] {
+	float: right;
+}
+
+.input-group input {
+	height: 62px;
+	width: 100%;
+	border: none;
+	font-size: 33px;
+    padding-left: 25px;
+    margin: 10px 0;
+}
+
+.download {
+	position: relative; 
+	width: 49%;
+	float: left;
+	display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.download .btn {
+    width: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.input-file {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(20);
+    -ms-transform: scale(20);
+     transform: scale(20); 
+    z-index: 4;
+    top: 0;
+    font-size: 0;
+     cursor: pointer; 
+}
+
+@media screen and (max-width: 1920px) {
+	.container {
+		max-width: 1464px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.container {
+		max-width: 974px;
+	}
+
+@media screen and (max-width: 980px) {
+	.container {
+		max-width: 746px;
+	}
+}
