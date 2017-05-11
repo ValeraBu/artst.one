@@ -70,7 +70,7 @@ h1 a {
     font-size: 66px;
 }
 
-.brand {
+.main-header .brand {
 	float: left;
 	width: 50%;
 	text-align: left;
@@ -446,7 +446,8 @@ h5 {
     margin: 0 60px;
 }
 
-.goods-slider {
+.goods-slider,
+.goods-slider2 {
 	margin: 80px -60px 0;
 }
 
@@ -599,6 +600,52 @@ h5 {
 	vertical-align: middle;
 	width: 33%;
 	padding: 1%;
+}
+
+.suppliers-item img {
+    width: 100%;
+    height: auto;
+}
+
+.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 0 auto;
+}
+
+#google-map {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*footer*/
+footer {
+    background: #253341;
+    padding: 0 0 20px;
+}
+
+footer h1 a {
+    color:  #ffffff;
+    font-size: 66.67px;
+    font-weight: 700;
+} 
+
+footer .brand,
+.copyright-year {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.copyright-year {
+    padding-left: 40px;
+    color:  #ffffff;
+    font-size: 33.33px;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 1920px) {

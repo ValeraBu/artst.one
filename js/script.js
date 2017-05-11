@@ -8,4 +8,10 @@ jQuery(document).ready(function($){
 	  slidesToShow: 3,
 	  slidesToScroll: 3
 	});
+
+	$('.goods-slider2').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 3
+	});
 });
