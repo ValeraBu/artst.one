@@ -14,4 +14,25 @@ jQuery(document).ready(function($){
 	  slidesToShow: 3,
 	  slidesToScroll: 3
 	});
+
+	$(window).scroll(function(){
+   if( $(window).scrollTop() > 300 ) {
+     $('.toTop').addClass('visible');
+   } else {
+     $('.toTop').removeClass('visible');
+   }
+ });
+	 $('.toTop').on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this);
+    $('html, body').stop().animate({
+     scrollTop: $(anchor.attr('href')).offset().top
+    }, 1000);
+   });
+
+	 $("[data-fancybox]").fancybox({
+		openMethod : 'fadeIn'
+	});
+
+
 });
