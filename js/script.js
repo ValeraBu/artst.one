@@ -30,9 +30,6 @@ jQuery(document).ready(function($){
     }, 1000);
    });
 
-	 $("[data-fancybox]").fancybox({
-		openMethod : 'fadeIn'
-	});
-
+	 $("a.slider-pic").fancybox();
 
 });

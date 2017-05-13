@@ -1,20 +1,16 @@
-/*@font-face{
-  font-family: "Calibri";
-  src: url("../fonts/Calibri.eot");
-  src: url("../fonts/Calibri.woff") format("woff"),
-  url("../fonts/Calibri.otf") format("OpenType"),
-  url("../fonts/Calibri.svg") format("svg"),
-  url("../fonts/Calibri.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}*/
-
 body, html {
     height: 100%;
     width: 100%;
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 	font-family: "Calibri", Arial, sans-serif;
 	font-weight: 300;
 	font-size: 46px;
@@ -43,6 +39,9 @@ body {
 }
 
 .wrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
 	width: 100%;
 }
 
@@ -285,7 +284,6 @@ input::-ms-input-placeholder{
 	font-size: 33.33px;
 }
 
-
 .bg-image2 {
 	position: relative;
 	background: url(../img/pic2.jpg) no-repeat;
@@ -313,7 +311,6 @@ input::-ms-input-placeholder{
 }
 
 .content2 {
-	/*position: relative;*/
     float: right;
     width: 37.7%;
 }
@@ -782,6 +779,9 @@ h5 {
 
 /*footer*/
 footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     background: #253341;
      padding: 7px 0 26px;
 }
@@ -839,6 +839,7 @@ footer .brand,
     text-decoration: none;
 }
 
+/*adaptive*/
 @media screen and (max-width: 2320px) {
 	.job-block {	
 	    right: 72%;
@@ -861,6 +862,7 @@ footer .brand,
 	.container {
 		max-width: 1524px;
 	}
+
 	h1,
 	h1 a,
 	h5,
@@ -877,6 +879,7 @@ footer .brand,
 	    font-size: 77.87px;
         line-height: 76px;
 	}
+
 	h3,
 	h4 {
 	    font-size: 58.4px;
@@ -885,6 +888,7 @@ footer .brand,
 	h3 {
 	    line-height: 68px;
 	}
+
 	.content1 span,
 	.content2 span {
 		font-size: 35.69px;
@@ -903,7 +907,6 @@ footer .brand,
 	.input-group input {
 		font-size: 25.95px;
 	}
-
 	input::-webkit-input-placeholder {
 		font-size: 25.95px;
 	}
@@ -913,6 +916,7 @@ footer .brand,
 	input::-ms-input-placeholder {
 		font-size: 25.95px;
 	}
+
 	.form-group .btn,
 	.content2 p  {
 		font-size: 45.42px;
@@ -942,21 +946,26 @@ footer .brand,
 	.content1 {
         padding-top: 38px;
 	}
+
 	.application {
 	    margin-top: 18px;
         max-width: 684px;
         padding: 0px 14px 24px;
 	}
+
 	.input-group input {
 	    height: 44px;
         margin: 9px 0;
 	}
+
 	.form-group {
 		margin-top: 18px;
 	}
+
 	.btn {
 		padding: 5px 0 6px;
 	}
+
 	.bg-image1:before {
 	    -moz-transform: skew(-58.1deg) translateX(-59.9%);
 	    -ms-transform: skew(-58.1deg) translateX(-59.9%);
@@ -1175,7 +1184,6 @@ footer .brand,
 	    left: 30.7%;
 	}
 }
-
 
 @media screen and (max-width: 1500px) {
 	.container {
@@ -1543,7 +1551,6 @@ footer .brand,
 	.input-group input{
 		font-size: 13.17px;
 	}
-
 	.input-group input::-webkit-input-placeholder {
 		font-size: 13.17px;
 	}
@@ -1773,7 +1780,6 @@ footer .brand,
 	.goods-slider_item {
 	    margin: 0 15px;
 	}
-
 }
 
 @media screen and (max-width: 980px) {
