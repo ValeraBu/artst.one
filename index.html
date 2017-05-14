@@ -285,7 +285,7 @@
                     <p><span>Время работы:</span>каждый день<br> с 10.00 до 20.00</p>
                 </div>
             </div>
-            <div id="google-map" class="map_model"></div>
+            <div id="map" class="map_model"></div>
         </section>
 
 
@@ -307,23 +307,29 @@
     </footer>
     <a href="#" id="toTop" href="#header" class="toTop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
-    <!-- map script -->
-    <script type="text/javascript">
-    function initMap() {
-             var myLatLng = { lat: 55.607288, lng: 37.645975};
-            var map = new google.maps.Map(document.getElementById('google-map'), {
-                center: {lat: 55.60666912, lng: 37.61967659},
-                scrollwheel: true,
-                zoom: 14
-            });
-            var marker = new google.maps.Marker({
-                map: map,
-                position: myLatLng,
-                title: 'Office'
-            });
-        }
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+            center: [55.60496077, 37.56357754],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        myGeoObject = new ymaps.GeoObject({
+        }),
+        myPieChart = new ymaps.Placemark([
+            55.607288, 37.645975
+        ]);
+
+    myMap.geoObjects
+        .add(myGeoObject)
+        .add(myPieChart);
+}
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-s-njAT7usamQuFKhAILiLZMLg1kT0&callback=initMap" async defer></script>
 
 
 <script src='js/jq.min.js'></script>
