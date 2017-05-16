@@ -499,7 +499,7 @@ h5 {
 
 .slider-pic {
 	overflow: hidden;
-	height: 686px;
+	height: 522px;
 	width: 100%;
     display: inline-block;
     transition: 0.5s all ease;
@@ -532,7 +532,7 @@ h5 {
 
 .goods-slider,
 .goods-slider2 {
-	margin: 132px -60px 0;
+	margin: 132px -60px -60px 0;
     width: 100%;
     overflow: hidden;
 }
@@ -1085,7 +1085,7 @@ footer .brand,
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 95px -50px 0;
+	    margin: 95px -50px -50px 0;
         width: 100%;
 	}
 
@@ -1101,7 +1101,7 @@ footer .brand,
 	}
 
 	.slider-pic {
-	    height: 530px;
+        height: 395px;
 	}
 
 	.goods-slider_item {
@@ -1427,11 +1427,11 @@ footer .brand,
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 67px -25px 0;
+	    margin: 67px -25px -25px 0;
 	}
 
 	.slider-pic {
-	    height: 352px;
+	    height: 277px;
 	}
 
 	.goods-slider_item {
@@ -1745,12 +1745,8 @@ footer .brand,
         right: 21%;
 	}
 
-	.goods-slider, .goods-slider2 {
-	    margin: 50px -35px 0;
-	}
-
 	.slider-pic {
-		height: 270px;
+	    height: 219px;
 	}
 
 	.goods-slider_item span {
@@ -1822,8 +1818,8 @@ footer .brand,
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 67px -15px 0;
-	}
+	    margin: 67px -15px -15px 0;
+    }
 
 	.goods-slider_item {
 	    margin: 0 15px;
