@@ -30,7 +30,15 @@ jQuery(document).ready(function($){
     }, 1000);
    });
 
-	 $("a.slider-pic").fancybox();
+	 $("a.slider-pic").fancybox({
+	 	'titleShow': true,
+	 	'titlePosition':'inside',
+	 	padding: 0, 
+		helpers: {
+		    overlay: {
+		      locked: false }
+			}
+	 	});
 
 });
 

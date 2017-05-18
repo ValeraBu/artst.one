@@ -490,6 +490,39 @@ h5 {
 	padding-left: 74px;
 }
 
+.thumb_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    color: #fff;
+    background: transparent;
+}
+
+.thumb_overlay:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font: 400 30px "FontAwesome";
+    line-height: 30px;
+    margin-top: -15px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-pic:hover .thumb_overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 /*slider*/
 
 .slider-block h4 {
@@ -498,6 +531,7 @@ h5 {
 }
 
 .slider-pic {
+    position: relative;
 	overflow: hidden;
 	height: 522px;
 	width: 100%;
@@ -532,9 +566,10 @@ h5 {
 
 .goods-slider,
 .goods-slider2 {
-	margin: 132px -60px -60px 0;
+	margin: -85px -60px -60px 0;
     width: 100%;
     overflow: hidden;
+    padding-top: 225px;
 }
 
 .slick-prev {
@@ -546,8 +581,8 @@ h5 {
     border-color: transparent #00002b transparent transparent;
     color: transparent;
     background-color: transparent;
-    top: -218px;
-    left: 31.7%;
+    top: 0;
+    left: 31%;
     cursor: pointer;
     -moz-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;
@@ -569,8 +604,8 @@ h5 {
     -o-transition: 0.3s all ease;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
-    right: 29.5%;
-    top: -218px;
+    right: 29%;
+    top: 0;
 }
 
 .slick-prev:hover {
@@ -1153,19 +1188,17 @@ body.hidden {
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 95px -50px -50px 0;
+	    margin: -85px -50px -50px 0;
         width: 100%;
 	}
 
 	.slick-prev {
 	    border-width: 42px 64px 42px 0; 
-        top: -174px;
 	}
 
 	.slick-next {
 	    border-width: 42px 0 42px 64px;
-        top: -174px;
-        right: 22%;
+        right: 28%;
 	}
 
 	.slider-pic {
@@ -1495,7 +1528,8 @@ body.hidden {
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 67px -25px -25px 0;
+	    margin: -47px -25px -25px 0;
+        padding-top: 120px;
 	}
 
 	.slider-pic {
@@ -1508,12 +1542,11 @@ body.hidden {
 
 	.slick-prev {
 	    border-width: 28px 42px 28px 0;
-	    top: -116px;
 	}
 
 	.slick-next {
 	    border-width: 28px 0 28px 42px;
-	    top: -116px;
+        right: 26%;
 	}
 
 	.goods-slider_item span {
@@ -1812,13 +1845,11 @@ body.hidden {
 
 	.slick-prev {
 	    border-width: 20px 36px 20px 0;
-        top: -102px;
 	}
 
 	.slick-next {
 	    border-width: 20px 0 20px 36px;
-        top: -102px;
-        right: 21%;
+        right: 25%;
 	}
 
 	.slider-pic {
@@ -1894,7 +1925,7 @@ body.hidden {
 	}
 
 	.goods-slider, .goods-slider2 {
-	    margin: 67px -15px -15px 0;
+        margin: -38px -15px -15px 0;
     }
 
 	.goods-slider_item {
